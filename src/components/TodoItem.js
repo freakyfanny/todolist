@@ -23,10 +23,10 @@ const TodoItem = ({ id, title, completed }) => {
   };
 
   return (
-    <li className="px-2 py-2  text-black flex my-1 w-full items-center justify-between hover:bg-gray-100 rounded-md">
+    <li className="px-2 py-2 dark:text-white text-black flex my-1 w-full items-center justify-between hover:bg-gray-100 dark:hover:bg-gray-900 rounded-md">
 	<input className="hidden" type="checkbox" id="task_1" checked={completed} onChange={(e) => {markAsDone(e);}} />
 	<label className="flex items-center h-10 rounded cursor-pointer" htmlFor="task_1">
-		<span className="flex items-center justify-center w-5 h-5 text-transparent border-2 border-gray-300 rounded-full">
+		<span className="flex items-center justify-center w-5 h-5 text-transparent border-2 border-gray-300 rounded-full dark:border-gray-500">
 			<svg className="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
 				<path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
 			</svg>
