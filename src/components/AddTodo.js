@@ -33,14 +33,14 @@ const AddTodo = () => {
                 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500
                 disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
                 invalid:border-pink-500 invalid:text-pink-600
-                focus:invalid:border-pink-500 focus:invalid:ring-pink-500 "
+                focus:invalid:border-pink-500 focus:invalid:ring-pink-500 dark:focus:ring-purple-400 dark:focus:border-purple-400"
         placeholder="Add task"
         value={value}
         onChange={(event) => setValue(event.target.value)}
       ></input>
 
       <button
-        className="shadow-sm bg-blue-500 hover:bg-blue-700 border border-sky-500 text-white font-bold text-sm py-2 px-4 rounded-md"
+        className="shadow-sm bg-blue-500 dark:bg-purple-500 hover:bg-blue-700 dark:hover:bg-purple-700 border dark:border-purple-300 border-sky-500 text-white font-bold text-sm py-2 px-4 rounded-md"
         onClick={onSubmit}
       >
         Add
