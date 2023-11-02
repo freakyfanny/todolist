@@ -23,7 +23,7 @@ const TodoItem = ({ id, title, completed }) => {
   };
 
   return (
-    <li className="px-2 py-2 dark:text-white text-black flex my-1 w-full items-center justify-between hover:bg-gray-100 dark:hover:bg-gray-900 rounded-md">
+    <li className="px-1 py-1 dark:text-white text-black flex w-full items-center justify-between hover:bg-gray-100 dark:hover:bg-gray-900 rounded-md">
 	<input className="hidden" type="checkbox" id="task_1" checked={completed} onChange={(e) => {markAsDone(e);}} />
 	<label className="flex items-center h-10 rounded cursor-pointer" htmlFor="task_1">
 		<span className="flex items-center justify-center w-5 h-5 text-transparent border-2 border-gray-300 rounded-full dark:border-gray-500">
