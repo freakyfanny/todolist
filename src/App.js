@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import AddTodo from './components/AddTodo';
+import Todos from './components/Todos';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<div className="app flex flex-col items-center pt-4">
+			<h1 className="text-xl p-2">My Tasks</h1>
+      <div className="flex flex-col">
+			<AddTodo />
+			<Todos />
+      </div>
+		</div>
+	);
+};
 
 export default App;
